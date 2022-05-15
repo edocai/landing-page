@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+$font-stack: 'Open Sans', sans-serif;
+$mainColor: #64bcf4;
+$hoverColor: #5bacdf;
+$backgroundColor: #f1f8fc;
+$darkOne: #312f3a;
+$darkTwo: #45424b;
+$lightOne: #919191;
+$lightTwo: #aaa;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    &::before {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    &::after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+}
+
+body {
+    font-family: $font-stack;
+}
+
+img {
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper {
+    position: relative;
+    padding: 1.7rem 0 2rem;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: $backgroundColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    position: relative;
+    max-width: 81rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3rem;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    img {
+        width: 40px;
+        margin-right: 0.6rem;
+        margin-top: -0.6rem;
+    }
+
+    h3 {
+        color: $darkTwo;
+        font-size: 1.55rem;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+}
+
+header {
+    position: relative;
+    z-index: 70;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.links {
+    ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+    }
+
+    a {
+        color: $lightTwo;
+        margin-left: 4.5rem;
+        display: inline-block;
+        transition: 0.3s;
+
+        &:hover {
+            color: $hoverColor;
+            transform: scale(1.05);
+        }
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    color: #fff !important;
+    background-color: $mainColor;
+    border-radius: 16px;
+    text-transform: capitalize;
+    transition: 0.3s;
+    
+    &:hover {
+        background-color: $hoverColor;
+        transform: scale(1) !important;
+    }
+}
+.btn2 {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    color: #fff !important;
+    background-color: $mainColor;
+    border-radius: 16px;
+    text-transform: capitalize;
+    transition: 0.3s;
+    margin-left: 1.5rem !important;
+    
+    &:hover {
+        background-color: $hoverColor;
+        transform: scale(1) !important;
+    }
+}
