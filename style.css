@@ -38,7 +38,7 @@ a {
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
-  background-color: #f1f8fc;
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,5 +157,44 @@ header .container {
   background-color: #5bacdf;
   -webkit-transform: scale(1) !important;
           transform: scale(1) !important;
+}
+
+.showcase .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.showcase .btn {
+  -webkit-box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.05);
+}
+
+.big-title {
+  font-size: 1.4rem;
+  color: #312f3a;
+  text-transform: capitalize;
+  line-height: 1.4;
+}
+
+.text {
+  color: #919191;
+  font-size: 1.1rem;
+  margin: 1.9rem 0 2.5rem;
+  max-width: 600px;
+  line-height: 2.3;
+}
+
+.hero {
+  width: 100%;
+  -webkit-transform: translate(5%, 25px);
+          transform: translate(5%, 25px);
 }
 /*# sourceMappingURL=style.css.map */
