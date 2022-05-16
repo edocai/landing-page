@@ -7,8 +7,14 @@
 
 ### Built with
 
-⚡️ HTML + Custom SCSS\
-⚡️ Fully Responsive\
+⚡️ HTML\
+⚡️ SCSS\
+⚡️ JS
+
+### Features
+
+⚡️ Light + Dark mode\
+⚡️ Fully Responsive
 
 ### Hosted/Deployed on
 
