@@ -14,4 +14,4 @@
 
 ⚡️ Netlify
 
-To view demo: [click here.](https://ss-landing-page.netlify.app/)
+To view demo: [click here.](https://landing-page-ss.netlify.app/)
