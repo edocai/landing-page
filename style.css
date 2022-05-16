@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
 .light {
-  --mainColor: #53a4d6;
-  --hoverColor: #5bacdf;
+  --mainColor: #F95F1D;
+  --hoverColor: #df551a;
   --backgroundColor: #f1f8fc;
   --darkOne: #312f3a;
   --darkTwo: #45424b;
@@ -10,8 +10,8 @@
 }
 
 .dark {
-  --mainColor: #64bcf4;
-  --hoverColor: #5bacdf;
+  --mainColor: #F95F1D;
+  --hoverColor: #df551a;
   --backgroundColor: #192e3a;
   --darkOne: #f3f3f3;
   --darkTwo: #fff;
@@ -144,6 +144,10 @@ header .container {
           transform: scale(1.05);
 }
 
+.links .toggle-btn {
+  margin-left: 1.5rem !important;
+}
+
 .btn {
   display: inline-block;
   padding: 0.7rem 1.5rem;
@@ -190,6 +194,8 @@ header .container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: -4rem;
+  min-height: 100vh;
 }
 
 .showcase .btn {
@@ -374,6 +380,22 @@ header .container {
           transform: translateY(0) rotate(45deg);
 }
 
+.bottom-area .container i {
+  font-size: 22px;
+  padding: 1rem;
+  color: var(--darkOne);
+}
+
+.bottom-area .container i:hover {
+  color: #64bcf4;
+}
+
+.bottom-area .container span {
+  font-size: 24px;
+  padding: 1rem;
+  color: var(--darkOne);
+}
+
 @media screen and (max-width: 870px) {
   .hamburger-menu {
     display: -webkit-box;
@@ -387,7 +409,7 @@ header .container {
     max-width: 450px;
     width: 100%;
     height: 100%;
-    background-color: #4d9bcc;
+    background-color: var(--hoverColor);
     z-index: 95;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -421,6 +443,9 @@ header .container {
     background: none;
     margin-left: 0 !important;
   }
+  .links .toggle-btn {
+    margin-left: 0 !important;
+  }
   .overlay {
     display: block;
     position: fixed;
@@ -442,7 +467,7 @@ header .container {
     margin: 1.4rem 0 1.5rem;
   }
   .hero {
-    width: 100%;
+    width: 120%;
     -webkit-transform: none;
             transform: none;
   }
@@ -474,7 +499,6 @@ header .container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    grid-gap: 2rem;
   }
 }
 

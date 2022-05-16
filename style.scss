@@ -3,8 +3,8 @@
 $font-stack: 'Open Sans', sans-serif;
 
 .light {
-    --mainColor: #53a4d6;
-    --hoverColor: #5bacdf;
+    --mainColor: #F95F1D;
+    --hoverColor: #df551a;
     --backgroundColor: #f1f8fc;
     --darkOne: #312f3a;
     --darkTwo: #45424b;
@@ -13,8 +13,8 @@ $font-stack: 'Open Sans', sans-serif;
 }
 
 .dark {
-    --mainColor: #64bcf4;
-    --hoverColor: #5bacdf;
+    --mainColor: #F95F1D;
+    --hoverColor: #df551a;
     --backgroundColor: #192e3a;
     --darkOne: #f3f3f3;
     --darkTwo: #fff;
@@ -117,11 +117,14 @@ header {
         margin-left: 4.5rem;
         display: inline-block;
         transition: 0.3s;
-
+        
         &:hover {
             color: var(--hoverColor);
             transform: scale(1.05);
         }
+    }
+    .toggle-btn {
+        margin-left: 1.5rem !important;
     }
 }
 
@@ -153,7 +156,9 @@ header {
         background-color: var(--hoverColor);
         transform: scale(1) !important;
     }
+
 }
+
 
 // Showcase \\
 
@@ -163,6 +168,8 @@ header {
         grid-template-columns: 1fr 1fr;
         align-items: center;
         justify-content: center;
+        margin-top: -4rem;
+        min-height: 100vh;
     }
 
     .btn {
@@ -345,6 +352,26 @@ header {
     }
 }
 
+.bottom-area {
+    .container {
+        i {
+            font-size: 22px;
+            padding: 1rem;
+            color: var(--darkOne);
+
+            &:hover {
+                color: #64bcf4;
+            }
+        }
+
+        span {
+            font-size: 24px;
+            padding: 1rem;
+            color: var(--darkOne);
+        }
+    }
+}
+
 // Responsive \\
 
 @media screen and (max-width: 870px) { 
@@ -358,7 +385,7 @@ header {
         max-width: 450px;
         width: 100%;
         height: 100%;
-        background-color: #4d9bcc;
+        background-color: var(--hoverColor);
         z-index: 95;
         display: flex;
         align-items: center;
@@ -381,6 +408,9 @@ header {
         }
     .btn2 {
             background: none;
+            margin-left: 0 !important;
+        }
+        .toggle-btn {
             margin-left: 0 !important;
         }
     }
@@ -408,7 +438,7 @@ header {
         }
 
     .hero {
-        width: 100%;
+        width: 120%;
         transform: none;
         }
 
@@ -441,7 +471,7 @@ header {
     .container {
         grid-template-columns: 1fr;
         justify-content: center;
-        grid-gap: 2rem;
+        
     }
   }
 }
